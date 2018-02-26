@@ -11,14 +11,8 @@ using System.Threading.Tasks;
  * Created by @codingo_
  * 
  * Please compile using the debug manifest to ensure 'string' text is included within the binary.
- * No dependancies besides .net installed need to be present. Just the cracknet.exe can be included in the
- * ctf release. Name is intended to be a hint.
- * 
- * Solution: The intended solution to this challenge is to either reverse engineer the binary in a decompiler
- * such as dnSpy to print out the flag (intentionally made a bit harder by the timer write location and freq) or by
- * finding both the AES key, and salt. Salt is intentionally stored within the Cypto class so the first discovery of the AES
- * decrypt string leads to a false-positive result. Class has been kept verbose for this reason.
- * **/
+ * No dependancies besides .net installed need to be present.
+ ***/
 
 namespace crikey.random
 {
